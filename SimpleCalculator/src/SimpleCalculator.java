@@ -1,8 +1,10 @@
+import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class SimpleCalculator {
 
@@ -10,9 +12,10 @@ public class SimpleCalculator {
 		// создал панель, лейаут и назначил лейаут єтой панели
 		JPanel panel = new JPanel();
 		GridBagLayout gbl = new GridBagLayout();
+		GridBagConstraints.NORTH;
 		panel.setLayout(gbl);
 		
-		//создам кнопки и сразу назначу им цифрі
+		//создам кнопки и сразу назначу им цифры, а также текстовое поле для ввода значений
 		JButton button1 = new JButton("1");
 		JButton button2 = new JButton("2");
 		JButton button3 = new JButton("3");
@@ -40,10 +43,13 @@ public class SimpleCalculator {
 		JButton buttonMS = new JButton("MS");
 		JButton buttonMPlus = new JButton("M+");
 		JButton buttonMMinus = new JButton("M-");
+		JTextField jTextField = new JTextField();
 		
 		
 		
 		panel.add(buttonMMinus);
+		
+		panel.add(jTextField);
 		
 		JFrame calculator = new JFrame();
 		calculator.setContentPane(panel);
