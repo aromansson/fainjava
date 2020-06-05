@@ -3,6 +3,9 @@ import java.awt.GridBagLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -12,7 +15,7 @@ public class SimpleCalculator {
 		// создал панель, лейаут и назначил лейаут єтой панели
 		JPanel panel = new JPanel();
 		GridBagLayout gbl = new GridBagLayout();
-		GridBagConstraints.NORTH;
+		GridBagConstraints gbc = new GridBagConstraints();
 		panel.setLayout(gbl);
 		
 		//создам кнопки и сразу назначу им цифры, а также текстовое поле для ввода значений
@@ -43,7 +46,17 @@ public class SimpleCalculator {
 		JButton buttonMS = new JButton("MS");
 		JButton buttonMPlus = new JButton("M+");
 		JButton buttonMMinus = new JButton("M-");
-		JTextField jTextField = new JTextField();
+		JTextField jTextField = new JTextField(); //текстове поле
+		
+		//створимо одразу меню
+		JMenuBar menuBar = new JMenuBar(); //панель
+		JMenu file = new JMenu("Файл");
+		JMenuItem exit = new JMenuItem("Вьіход");
+		file.add(exit);
+		JMenu edit = new JMenu("Правка");
+		JMenu about = new JMenu("О программе");
+		JMenuBar.;
+		
 		
 		
 		
