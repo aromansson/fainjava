@@ -12,7 +12,6 @@ public class SimpleCalculator {
 		// создал панель, лейаут и назначил лейаут єтой панели
 		JPanel panel = new JPanel();
 		GridBagLayout gbl = new GridBagLayout();
-		GridBagConstraints.NORTH;
 		panel.setLayout(gbl);
 		
 		//создам кнопки и сразу назначу им цифры, а также текстовое поле для ввода значений
@@ -53,8 +52,12 @@ public class SimpleCalculator {
 		
 		JFrame calculator = new JFrame();
 		calculator.setContentPane(panel);
-		calculator.setSize(200, 300);
-		calculator.setVisible(true);
+		calculator.setSize(218, 314); //размер фрейма
+		calculator.setResizable(false); //не разрешаем менять размер
+		calculator.setVisible(true); //делаем видимым
+		calculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//завершаем программу при закрытии формы
+		
+	
 		
 		
 		
