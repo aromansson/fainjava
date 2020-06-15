@@ -1,5 +1,6 @@
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Insets;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -46,16 +47,29 @@ public class SimpleCalculator {
 		
 		
 		
-		panel.add(buttonMMinus);
 		
-		panel.add(jTextField);
+		
+		panel.add(jTextField, new GridBagConstraints(0, 0, GridBagConstraints.REMAINDER, 1, 1, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(11, 11, 11, 5)
+				, 0, 30));
+		panel.add(buttonMC, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
+				, 0, 0));
+		panel.add(buttonMR, new GridBagConstraints(1, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
+				, 0, 0));
+		panel.add(buttonMS, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
+				, 0, 0));
+		panel.add(buttonMPlus, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
+				, 0, 0));
+		panel.add(buttonMMinus, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
+				, 0, 0));
 		
 		JFrame calculator = new JFrame();
 		calculator.setContentPane(panel);
 		calculator.setSize(218, 314); //размер фрейма
 		calculator.setResizable(false); //не разрешаем менять размер
 		calculator.setVisible(true); //делаем видимым
+		calculator.setLocationRelativeTo(null);//не привязываем к краям экрана, пусть где-то в центре появляется
 		calculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//завершаем программу при закрытии формы
+		
 		
 	
 		
