@@ -14,8 +14,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import com.sun.media.jfxmedia.events.NewFrameEvent;
-
 public class SimpleCalculator {
 
 	public static void main(String[] args) {
@@ -23,10 +21,7 @@ public class SimpleCalculator {
 		
 		JPanel panel = new JPanel();
 		GridBagLayout gbl = new GridBagLayout();
-<<<<<<< HEAD
-=======
-		
->>>>>>> branch 'master' of https://github.com/aromansson/fainjava
+
 		panel.setLayout(gbl);
 		
 		//создам кнопки и сразу назначу им цифры, а также текстовое поле для ввода значений
@@ -105,7 +100,6 @@ public class SimpleCalculator {
 		
 		
 		
-<<<<<<< HEAD
 		panel.add(jTextField, new GridBagConstraints(0, 0, GridBagConstraints.REMAINDER, 1, 1, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(11, 11, 11, 5)
 				, 0, 30));
 		panel.add(buttonMC, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
@@ -118,7 +112,7 @@ public class SimpleCalculator {
 				, 0, 0));
 		panel.add(buttonMMinus, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
 				, 0, 0));
-=======
+
 		panel.add(jTextField,  new GridBagConstraints(0,0,GridBagConstraints.REMAINDER,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,
 				new Insets(2, 2, 2, 2),0,0));
 		panel.add(buttonMC,  new GridBagConstraints(0,1,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
@@ -141,28 +135,16 @@ public class SimpleCalculator {
 		panel.add(buttonBack, new GridBagConstraints(3,2,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
 				new Insets(2, 2, 2, 2),10,0));
 		
->>>>>>> branch 'master' of https://github.com/aromansson/fainjava
 		
 		JFrame calculator = new JFrame();
 		calculator.setContentPane(panel);
-<<<<<<< HEAD
 		calculator.setSize(218, 314); //размер фрейма
 		calculator.setResizable(false); //не разрешаем менять размер
 		calculator.setVisible(true); //делаем видимым
 		calculator.setLocationRelativeTo(null);//не привязываем к краям экрана, пусть где-то в центре появляется
 		calculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//завершаем программу при закрытии формы
 		
-		
 	
-=======
-		calculator.setSize(220, 330);
-		calculator.setVisible(true);
-		calculator.setLocationRelativeTo(null);
-		calculator.setResizable(false);
->>>>>>> branch 'master' of https://github.com/aromansson/fainjava
-		
-		
-		
 		
 		
 	}
