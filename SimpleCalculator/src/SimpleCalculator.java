@@ -80,8 +80,7 @@ public class SimpleCalculator {
 		buttonMPlus.setFont(new Font("Arial", Font.BOLD, 12));
 		buttonMPlus.setMargin(new Insets(5, 0, 5, 0));
 		JButton buttonMMinus = new JButton("M-");
-		buttonMMinus.setFont(new Font("Arial", Font.BOLD, 1
-));
+		buttonMMinus.setFont(new Font("Arial", Font.BOLD, 12));
 		buttonMMinus.setMargin(new Insets(5, 0, 5, 0));
 		JTextField jTextField = new JTextField(); //текстове поле
 		
@@ -101,7 +100,7 @@ public class SimpleCalculator {
 		
 		
 		panel.add(jTextField, new GridBagConstraints(0, 0, GridBagConstraints.REMAINDER, 1, 1, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(11, 11, 11, 5)
-				, 0, 30));
+				, 0, 0));
 		panel.add(buttonMC, new GridBagConstraints(0, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
 				, 0, 0));
 		panel.add(buttonMR, new GridBagConstraints(1, 1, 1, 1, 0, 0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(5, 11, 5, 5)
@@ -134,6 +133,16 @@ public class SimpleCalculator {
 				new Insets(2, 2, 2, 2),10,0));
 		panel.add(buttonBack, new GridBagConstraints(3,2,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
 				new Insets(2, 2, 2, 2),10,0));
+		
+		panel.add(buttonOneX, new GridBagConstraints(0,3,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
+				new Insets(2, 2, 2, 2),10,0));
+		panel.add(button, new GridBagConstraints(0,3,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
+				new Insets(2, 2, 2, 2),10,0));
+		panel.add(buttonOneX, new GridBagConstraints(0,3,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
+				new Insets(2, 2, 2, 2),10,0));
+		panel.add(buttonOneX, new GridBagConstraints(0,3,1,1,1,1,GridBagConstraints.NORTH,GridBagConstraints.RELATIVE,
+				new Insets(2, 2, 2, 2),10,0));
+		
 		
 		
 		JFrame calculator = new JFrame();
